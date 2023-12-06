@@ -77,3 +77,9 @@ def manage():
 
 
     return render_template('main.html', single_results=single_results, couple_results=couple_results, errors=errors)
+
+
+
+if __name__ == "__main__":
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=8080)
