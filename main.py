@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import render_template
 
-app = Flask(__name__, template_folder='templates')
+app = Flask(__name__, template_folder='advanced_user/templates')
 
 @app.route("/")
 def manage():
